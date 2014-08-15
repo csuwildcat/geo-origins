@@ -15,11 +15,13 @@ Bad News: In my work with LTBs, it became immediately clear platforms like Andro
 Here's the current platform paradigms for LBTs (note: models differ a bit, this is the general flow):
 
 * Each app is required to listen for triggers _(usually via an SDK or Bluetooth LE APIs)_
-* Triggers, like beacons, are expected to be dumb convenances of simple pings
-* Usually third-party layer is required to associate pings with their meta data and context
+* Triggers are used as devices that emit simple pings with almost no payload )(think GPS)_
+* Usually third-party layer is required to associate trigger pings with meta data and context
 * 
 
+## Why did they implement LBTs this way?
 
+I suspect the primary issue with LBTs, is spam. If there are 100 beacons in a small area, all activating your phone, you'd have the mobile platform equivalent of browser popups - obtrusive spam from all directions! To solve this in a quick and dirty way, platforms tied the ability to listen for and activate content based on LBTs to apps. Seems legit, right? You trust your apps, so why not let them act as trusted agents?
 
 ## Is anyone trying to fix this?
 
