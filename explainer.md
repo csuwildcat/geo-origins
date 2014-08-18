@@ -41,6 +41,29 @@ As I've noted above, losing the ability to do proactive, push notifications from
 
 You walk inside and are greeted with aisles of merchandise, separated by the section they belong to. The store may contain LBTs that offer specific content for each section and aisle, or even very short-range triggers that broadcast a few feet to provided item-level content. UX is obviously a concern here, because regardless of the system you choose, you don't want to spam users - but not spamming customers is in the best interest of the store anyway. You probably want a system that permits the store to broker proactive, LBT push notifications, so long as there's an ability to revoke that permission.
 
-### Linking physical spaces, to digital entities
+### IFrame : Web Page :: Place : World
 
-When you enter a store like Target, you are actually entering a building owned or operated by the Target Corporation - an entity. Target also has a nifty little web site located on the domain [target.com](http://www.target.com). The vasy majority of users intuitively associate physical locations with their digital counterparts.
+To understand Geo-Origins, it will help to think of the physical world around you as a giant web page. Imagine all the stores in this web page are iframes. In a web page, all frames are tied to an origin; this is done to separate code and execution contexts. In an frame, you know that all the code and content within that window is subject to the web's same-origin, security policy. It is possible to create a trust layer in the physical world using these same principles.
+
+### Connecting the dots
+
+Imagine beacons in stores as emitters of POST requests. Under the Geo-Origin model, beacons in an origin-tied location, like a Target store can proactively push content to users, as long as the content is coming from [target.com](http://www.target.com). This geo-origin policy is enfored by the User Agent - platforms like Android/iOS, or browsers like Firefox and Chrome. The funny thing, is that Google already has all the requisite pieces in place to enforce geo-origins - in fact, they're (kinda) already doing it without knowing:
+
+![Retail Store with Beacons](http://i.imgur.com/824MOY5.png)
+
+The one thing missing is a declaritive way to tell platforms like Google what locations your domain is tied to. I envision this being provided via a declaritive descriptor file, `entity.json`. This file would live in a predictable place, on the domain root, and be accessible to the User Agent. Here's a strawman for what it might look like:
+
+```
+{
+  "name": "Target",
+  "legal-name": "Target Corporation",
+  "description": "Target is your preferred shopping destination - Expect More. Pay Less.®",
+  "locations": [
+    {
+      "address": "5001 Junipero Serra Blvd, Colma, CA 94014",
+      "geo-origin-policy": "*.target.com"
+    }
+  ]
+}
+```
+
