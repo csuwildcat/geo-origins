@@ -1,8 +1,5 @@
-geo-origins
+Geo-Origins Explainer
 ===========
-
-Removing the friction from location-based triggering with origin-bound geofencing
-
 
 ## What are Location-Based Triggers?
 
