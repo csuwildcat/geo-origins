@@ -41,4 +41,6 @@ As I've noted above, losing the ability to do proactive, push notifications from
 
 You walk inside and are greeted with aisles of merchandise, separated by the section they belong to. The store may contain LBTs that offer specific content for each section and aisle, or even very short-range triggers that broadcast a few feet to provided item-level content. UX is obviously a concern here, because regardless of the system you choose, you don't want to spam users - but not spamming customers is in the best interest of the store anyway. You probably want a system that permits the store to broker proactive, LBT push notifications, so long as there's an ability to revoke that permission.
 
-### It's all about the origin, man
+### Linking physical spaces, to digital entities
+
+When you enter a store like Target, you are actually entering a building owned or operated by the Target Corporation - an entity. Target also has a nifty little web site located on the domain [target.com](http://www.target.com). The vasy majority of users intuitively associate physical locations with their digital counterparts.
