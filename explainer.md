@@ -1,6 +1,8 @@
 ## What are Location-Based Triggers?
 
-Location-Based Triggers (iBeacons, RFID, etc.) are all the rage these days. Article after article touts the use of iBeacons, and other LBTs, to activate devices and apps base on your current, granular location. 
+Location-Based Triggers (iBeacons, RFID, etc.) are all the rage these days. Article after article touts the use of iBeacons, and other LBTs, to activate devices and apps base on your current, granular location. Beacons, among other LBTs, are able to transmit a small amount of data to devices listening for triggers. A device or app listening for these triggers is able to show content based on how it decides to handle the data it recieves.
+
+![What are LBTs? (beacons, RFID, etc.)](http://i.imgur.com/DO5bRrt.jpg)
 
 Good News: LBTs are a great idea, and offer developers a ton of functionality, and allow for the creation of immersive, contextually relevant, user experiences.
 
