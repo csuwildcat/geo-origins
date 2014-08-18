@@ -50,7 +50,7 @@ To understand Geo-Origins, it will help to think of the physical world around yo
 Imagine beacons in stores as emitters of POST requests. Under the Geo-Origin model, beacons in an origin-tied location, like a Target store can proactively push content to users, as long as the content is coming from [target.com](http://www.target.com). This geo-origin policy is enfored by the User Agent - platforms like Android/iOS, or browsers like Firefox and Chrome. The funny thing, is that Google already has all the requisite pieces in place to enforce geo-origins - in fact, they're (kinda) already doing it without knowing:
 
 ![Retail Store with Beacons](http://i.imgur.com/TjZw9o3.png)
-####(Notice this SF location is already linked to the target.com website, as identified at the bottom of the screenshot)
+#####(Notice this SF location is already linked to the target.com website, as identified at the bottom of the screenshot)
 
 The one thing missing is a declaritive way to tell platforms like Google what locations your domain is tied to. I envision this being provided via a declaritive descriptor file, `entity.json`. This file would live in a predictable place, on the domain root, and be accessible to the User Agent. Here's a strawman for what it might look like:
 
