@@ -52,6 +52,8 @@ Imagine beacons in stores as emitters of POST requests. Under the Geo-Origin mod
 ![Retail Store with Beacons](http://i.imgur.com/TjZw9o3.png)
 #####(Notice this SF location is already linked to the target.com website, as identified at the bottom of the screenshot)
 
+### Linking physical locations to web origins
+
 The one thing missing is a declaritive way to tell platforms like Google what locations your domain is tied to. I envision this being provided via a declaritive descriptor file, `entity.json`. This file would live in a predictable place, on the domain root, and be accessible to the User Agent. Here's a strawman for what it might look like:
 
 ```
@@ -69,3 +71,12 @@ The one thing missing is a declaritive way to tell platforms like Google what lo
 ```
 
 ### The User Experience
+
+The first time you enter a location that is tied to a geo-origin and recieve a ping from a beacon or other form of LBT, you would be asked by the User Agent whether you wanted to allow content to be pushed to you by that location's linked entity. It would look something like the geolocation permission prompt you see on many web pages today.
+
+Once you've opted in, your device will automatically listen for LBT triggers while within the bounds of that origin-tied location. Once a trigger has been recieved, the User Agent checks to ensure the content URL being passed to it adheres to the geo-origin policy specified by that location's entity.json. When the content has been screened by the UA, it is shown directly to the user without the need for any manual actions or app coordination!
+
+##### What about public spaces?
+
+In open spaces like streets or parks, Scott's Physical Web model would be the one that controls user access to LBT content. This is because no one effectively "owns" the origin of an open, public place. Scott's model is incredibly useful when an owning domain cannot be associated with a location.
+
