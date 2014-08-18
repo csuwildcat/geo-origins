@@ -1,6 +1,3 @@
-Geo-Origins Explainer
-===========
-
 ## What are Location-Based Triggers?
 
 Location-Based Triggers (iBeacons, RFID, etc.) are all the rage these days. Article after article touts the use of iBeacons, and other LBTs, to activate devices and apps base on your current, granular location. 
