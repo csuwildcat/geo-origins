@@ -35,6 +35,8 @@ So is that the best we can do? There are times when the ability for beacons to p
 
 As I've noted above, losing the ability to do proactive, push notifications from LBTs is a significant blow to many use-cases. Consider the case of a retail store:
 
+![Retail Store with Beacons](http://i.imgur.com/824MOY5.png)
+
 You walk inside and are greeted with aisles of merchandise, separated by the section they belong to. The store may contain LBTs that offer specific content for each section and aisle, or even very short-range triggers that broadcast a few feet to provided item-level content. UX is obviously a concern here, because regardless of the system you choose, you don't want to spam users - but not spamming customers is in the best interest of the store anyway. You probably want a system that permits the store to broker proactive, LBT push notifications, so long as there's an ability to revoke that permission.
 
 ### It's all about the origin, man
