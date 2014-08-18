@@ -25,14 +25,16 @@ The choice to use apps as the trust layer brings with it a host of other problem
 
 ## Is anyone trying to fix this?
 
-The above mentioned issues are grabbing the attention of the right folks. Scott Jensen is one Googler who has put forth a model, the Physical Web - https://github.com/scottjenson/physical-web, that would remove the app barrier of current LBT platform implementations, and allow a device's platform/OS to directly open URLs it receives from triggers. Both are great moves in the right direction. There is one major caveat with Scott's proposal: it forces the user to constantly deal with scanning, evaluating, and choosing what to engage with in world around them. The Physical Web enforces a model that allows for *no proactive notifications*. 
+The above mentioned issues are grabbing the attention of the right folks. Scott Jensen is one Googler who has put forth a model, the Physical Web - https://github.com/scottjenson/physical-web, that would remove the app barrier of current LBT platform implementations, and allow a device's platform/OS to directly open URLs it receives from triggers. Both are great moves in the right direction.
 
-In open, public areas (streets, parks, etc.), Scott's model is really helpful. It allows explicit user access to content, while mitigating spam. Walking down the street, you could come across hundreds of beacons in a day, so you want a system that requires some explicit user action before allowing those beacons to display content on your device.
+There is one major caveat with Scott's Physical Web proposal: it eliminates *proactive, push notifications* from LBTs in order to block spam. As a result, the Physical Web model would require user to deal with scanning, evaluating, and choosing what to engage with in world around them. At scale, with beacons everywhere, the UX around content selection becomes an issue unto itself, as Scott notes in his proposal. This doesn't mean the model is bad, or unhelpful. In open, public areas (streets, parks, etc.), Scott's model is great. It allows explicit user access to content, while mitigating spam. Walking down the street, you could come across hundreds of beacons in a day, so you want a system that requires some explicit user action before allowing those beacons to display content on the user's device.
 
-So is that the best we can do? There are times when the ability for beacons to proactively push content is far more desirable - is there no way to allow for this? I believe there is.
+So is that the best we can do? There are times when the ability for beacons to proactively push content is far more desirable - is there no way to allow for this? I believe there is, and it takes shape as an additional system that compliments the Physical Web model.
 
 ## Geo-Origins to the rescue!
 
-As I've noted above, losing the ability to do proactive, push notifications from LBTs is a blow to many use-cases. Consider the case of a retail store:
+As I've noted above, losing the ability to do proactive, push notifications from LBTs is a significant blow to many use-cases. Consider the case of a retail store:
 
-You walk inside and are greeted with aisles of merchandise, separated by the section they belong to. The store may contain LBTs that offer specific content for each section and aisle, or even very short-range triggers that broadcast only a few feet, to provided item-level content. UX is obviously a concern here, because regardless of the system you choose, you don't want to spam users - but not spamming customers is in the best interest of the store anyway. 
+You walk inside and are greeted with aisles of merchandise, separated by the section they belong to. The store may contain LBTs that offer specific content for each section and aisle, or even very short-range triggers that broadcast a few feet to provided item-level content. UX is obviously a concern here, because regardless of the system you choose, you don't want to spam users - but not spamming customers is in the best interest of the store anyway. You probably want a system that permits the store to broker proactive, LBT push notifications, so long as there's an ability to revoke that permission.
+
+### It's all about the origin, man
