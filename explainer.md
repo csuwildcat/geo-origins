@@ -33,3 +33,6 @@ So is that the best we can do? There are times when the ability for beacons to p
 
 ## Geo-Origins to the rescue!
 
+As I've noted above, losing the ability to do proactive, push notifications from LBTs is a blow to many use-cases. Consider the case of a retail store:
+
+You walk inside and are greeted with aisles of merchandise, separated by the section they belong to. The store may contain LBTs that offer specific content for each section and aisle, or even very short-range triggers that broadcast only a few feet, to provided item-level content. UX is obviously a concern here, because regardless of the system you choose, you don't want to spam users - but not spamming customers is in the best interest of the store anyway. 
