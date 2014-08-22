@@ -43,11 +43,11 @@ You walk inside the store and are greeted with aisles of merchandise, separated 
 
 ### IFrame : Web Page :: Place : World
 
-To understand Geo-Origins, it will help to think of the physical world around you as a giant web page. Imagine all the stores in this web page are iframes. In a web page, all frames are tied to an origin; this is done to separate code and execution contexts. In an frame, you know that all the code and content within that window is subject to the web's same-origin, security policy. It is possible to create a trust layer in the physical world using these same principles.
+To understand Geo-Origins, it will help to think of the physical world around you as a giant web page. Imagine all the stores in this web page are iframes. In a web page, all frames are tied to an origin; this is done to separate code and execution contexts. In an frame, you know that all the code and content within that window is subject to the web's same-origin security policy. It is possible to create a trust layer in the physical world using these same principles.
 
 ### Connecting the dots
 
-Imagine beacons in stores as emitters of POST requests. Under the Geo-Origin model, beacons in an origin-tied location, like a Target store can proactively push content to users, as long as the content is coming from [target.com](http://www.target.com). This geo-origin policy is enfored by the User Agent - platforms like Android/iOS, or browsers like Firefox and Chrome. The funny thing, is that Google already has all the requisite pieces in place to enforce geo-origins - in fact, they're (kinda) already doing it without knowing:
+Imagine beacons in stores as emitters of POST requests. Under the Geo-Origin model, beacons in an origin-tied location, like a Target store, can proactively push content to users as long as the content is coming from [target.com](http://www.target.com). This geo-origin policy is enfored by the User Agent - platforms like Android/iOS, or browsers like Firefox and Chrome. The funny thing, is that Google already has all the requisite pieces in place to enforce geo-origins - in fact, they're (kinda) already doing it without knowing:
 
 ![Google Maps Panel](http://i.imgur.com/TjZw9o3.png)
 
