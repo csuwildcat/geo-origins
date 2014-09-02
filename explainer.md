@@ -77,6 +77,15 @@ The first time you enter a location that is tied to a geo-origin and recieve a p
 
 Once you've opted in, your device will automatically listen for LBT triggers while within the bounds of that origin-tied location. Once a trigger has been recieved, the User Agent checks to ensure the content URL being passed to it adheres to the geo-origin policy specified by that location's entity.json. When the content URL has been screened by the UA, it is shown directly to the user without the need for any manual actions or app coordination!
 
+Below is a mockup showing how LBT push content pings would be handled in the following 4 use-cases:
+
+- User *has _not_ allowed* LBTs for the entity, the push content is denied. (*red square*)
+- User *has allowed* LBTs for the entity, but the push content is denied becuase the user is outside of the entity's geo-fenced bounds. (*blue octagon*)
+- User *has allowed* LBTs for the entity, but the push content is denied because it points to a domain that is blocked by the `geo-origin-policy` value in its `entity.json` descriptor file.  (*orange triangle*)
+- User *has allowed* LBTs for the entity, and recieves the push content because they are within the geo-fenced bounds of the entity, and the domain is authorized by the `geo-origin-policy` value in its `entity.json` descriptor file.  (*green circle*)
+
+INSERT MOCKUP HERE
+
 ##### What about public spaces?
 
 In open spaces like streets or parks, Scott's Physical Web model would be the one that controls user access to LBT content. This is because no one effectively "owns" the origin of an open, public place. Scott's model is incredibly useful when an owning domain cannot be associated with a location.
