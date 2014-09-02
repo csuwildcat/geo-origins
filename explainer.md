@@ -79,7 +79,7 @@ Once you've opted in, your device will automatically listen for LBT triggers whi
 
 Below is a mockup showing how LBT push content pings would be handled in the following 4 use-cases:
 
-- User *has _not_ allowed* LBTs for the entity, the push content is denied. (*red square*)
+- User _has _not_ allowed_ LBTs for the entity, the push content is denied. (*red square*)
 - User *has allowed* LBTs for the entity, but the push content is denied becuase the user is outside of the entity's geo-fenced bounds. (*blue octagon*)
 - User *has allowed* LBTs for the entity, but the push content is denied because it points to a domain that is blocked by the `geo-origin-policy` value in its `entity.json` descriptor file.  (*orange triangle*)
 - User *has allowed* LBTs for the entity, and recieves the push content because they are within the geo-fenced bounds of the entity, and the domain is authorized by the `geo-origin-policy` value in its `entity.json` descriptor file.  (*green circle*)
