@@ -84,7 +84,7 @@ Below is a mockup showing how LBT push content pings would be handled in the fol
 - User **has allowed** LBTs for the entity, but the push content is denied because it points to a domain that is blocked by the `geo-origin-policy` value in its `entity.json` descriptor file.  (**orange**)
 - User **has allowed** LBTs for the entity, and recieves the push content because they are within the geo-fenced bounds of the entity, and the domain is authorized by the `geo-origin-policy` value in its `entity.json` descriptor file.  (**green**)
 
-INSERT MOCKUP HERE
+![Mock of Technical User-Stories](http://i.imgur.com/1pRtgvO.png)
 
 ##### What about public spaces?
 
