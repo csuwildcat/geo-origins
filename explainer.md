@@ -47,7 +47,7 @@ To understand Geo-Origins, it will help to think of the physical world around yo
 
 ### Connecting the dots
 
-Imagine beacons in stores as emitters of POST requests. Under the Geo-Origin model, beacons in an origin-tied location, like a Target store, can proactively push content to users as long as the content is coming from [target.com](http://www.target.com). This geo-origin policy is enfored by the User Agent - platforms like Android/iOS, or browsers like Firefox and Chrome. The funny thing, is that Google already has all the requisite pieces in place to enforce geo-origins - in fact, they're (kinda) already doing it without knowing:
+Imagine beacons in stores as emitters of POST requests. Under the Geo-Origin model, beacons in an origin-tied location, like a Target store, can proactively push content to users as long as the content is coming from [target.com](http://www.target.com). This geo-origin policy is enforced by the User Agent - platforms like Android/iOS, or browsers like Firefox and Chrome. The funny thing, is that Google already has all the requisite pieces in place to enforce geo-origins - in fact, they're (kinda) already doing it without knowing:
 
 ![Google Maps Panel](http://i.imgur.com/TjZw9o3.png)
 
