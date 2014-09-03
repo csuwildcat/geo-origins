@@ -4,7 +4,7 @@ Location-Based Triggers (iBeacons, RFID, etc.) are all the rage these days. Arti
 
 ![What are LBTs? (beacons, RFID, etc.)](http://i.imgur.com/DO5bRrt.jpg)
 
-Good News: LBTs are a great idea, and offer developers a ton of functionality the can use to create immersive, contextually relevant, user experiences.
+Good News: LBTs are a great idea, and offer developers a ton of functionality they can use to create immersive, contextually relevant, user experiences.
 
 Bad News: In my work with LBTs, it became immediately clear platforms like Android and iOS implement these features in a way that is inherently high-friction, largely tied to apps, and fraught with disjoint, lacklustre UX paradigms.
 
