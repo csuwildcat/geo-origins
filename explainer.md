@@ -1,10 +1,10 @@
 ## What are Location-Based Triggers?
 
-Location-Based Triggers (iBeacons, RFID, etc.) are all the rage these days. Article after article touts the use of iBeacons, and other LBTs, to activate devices and apps base on your current, granular location. Beacons, among other LBTs, are able to transmit small amounts of data to devices listening for triggers. A device or app listening for these triggers is able to show content based on the payload it recieves.
+Location-Based Triggers (iBeacons, RFID, etc.) are all the rage these days. Article after article touts the use of beacons, and other LBTs, to activate devices and apps base on your current, granular location. Beacons, among other LBTs, are able to transmit small amounts of data to devices listening for triggers. A device or app listening for these triggers is able to show content based on the payload it recieves.
 
 ![What are LBTs? (beacons, RFID, etc.)](http://i.imgur.com/DO5bRrt.jpg)
 
-Good News: LBTs are a great idea, and offer developers a ton of functionality they can use to create immersive, contextually relevant, user experiences.
+Good News: LBTs are a great idea and offer developers a ton of functionality they can use to create immersive, contextually relevant, user experiences.
 
 Bad News: In my work with LBTs, it became immediately clear that platforms like Android and iOS implement these features in a way that is inherently high-friction, largely tied to apps, and fraught with disjoint, lacklustre UX paradigms.
 
@@ -17,7 +17,7 @@ Here is the current scheme platforms have concocted to provide LBT features (not
 
 ## Why did platforms implement LBTs this way?
 
-The primary LBT issue platforms grapple with, is notification spam. If there are 100 beacons in a small area, all able to unilaterally activate your phone, you'd experience the mobile equivalent of endless browser popups - massive spam from all direction. To solve this in a quick and dirty way, platforms tied activation based on LBTs, to apps. Seems legit, right? You trust your apps, so why not let them act as your trusted agents?
+The primary LBT issue platforms grapple with, is notification spam. If there are 100 beacons in a small area all able to unilaterally activate your phone, you'd experience the mobile equivalent of endless browser popups - massive spam from all direction. To avoid platforms went the quick-and-dirty route of tying LBT activation to apps. Seems legit, right? You trust your apps, so why not let them act as your trusted agents?
 
 The choice to use apps as the trust layer brings with it a host of other problems that equally degrade the value proposition of LBTs. Let's take a look at what happens when you go the app route:
 
@@ -27,9 +27,9 @@ The choice to use apps as the trust layer brings with it a host of other problem
 
 ## Is anyone trying to fix this?
 
-The above mentioned issues are grabbing the attention of the right folks. Scott Jensen is one Googler who has put forth a model, the Physical Web - https://github.com/scottjenson/physical-web, that would remove the app barrier of current LBT platform implementations, and allow a device's platform/OS to directly open LBT content URLs. Both are great moves in the right direction.
+The above mentioned issues are grabbing the attention of the right folks. Scott Jensen is a Googler who has put forth an alternate model, the Physical Web - https://github.com/scottjenson/physical-web. The Physical Web model would remove the app barrier present in current LBT platform implementations, and allow a device's platform/OS to directly open LBT content URLs. Both are great moves in the right direction.
 
-There is one major caveat with Scott's Physical Web proposal: it eliminates *proactive, push notifications* from LBTs in order to block spam. As a result, the Physical Web model would require user to deal with scanning, evaluating, and choosing what to engage with in world around them. At scale, with beacons everywhere, the UX around content selection becomes an issue unto itself, as Scott notes in his proposal. This doesn't mean the model is bad, or unhelpful. In open, public areas (streets, parks, etc.), Scott's model is great. It allows explicit user access to content, while mitigating spam. Walking down the street, you could come across hundreds of beacons in a day, so you want a system that requires some explicit user action before allowing those beacons to display content on the user's device.
+There is one major caveat with Scott's Physical Web proposal: it eliminates *proactive, push notifications* from LBTs in order to block spam. As a result, the Physical Web model would require users to deal with scanning, evaluating, and choosing what to engage with in world around them. At scale, with beacons everywhere, the UX around content selection becomes an issue unto itself, as Scott notes in his proposal. This doesn't mean the model is bad, or unhelpful. In open, public areas (streets, parks, etc.), Scott's model is great. It allows explicit user access to content, while mitigating spam. Walking down the street you could come across hundreds of beacons in a day, so you want a system that requires some explicit user action before allowing those beacons to display content on the user's device.
 
 So is that the best we can do? There are times when the ability for beacons to proactively push content is far more desirable - is there no way to allow for this? I believe there is, and it takes shape as an additional system that compliments the Physical Web model.
 
