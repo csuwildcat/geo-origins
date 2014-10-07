@@ -2,10 +2,18 @@
   "name": "Target",
   "legal-name": "Target Corporation",
   "description": "Target is your preferred shopping destination - Expect More. Pay Less.®",
+  "global-geo-origin-policy": "*.target.com",
   "locations": [
     {
-      "address": "5001 Junipero Serra Blvd, Colma, CA 94014",
-      "geo-origin-policy": "*.target.com"
+      "address": "5001 Junipero Serra Blvd, Colma, CA 94014"
+    },
+    {
+      "address": "1234 Main Street, Anytown, CA 99999",
+      "geo-origin-policy": ["*.target.com", "*.foo.com"]
+    },
+    {
+      "address": "5678 1st Avenue, Someplace, CA 90101",
+      "geo-origin-policy": "*.bar.com"
     }
   ]
 }
