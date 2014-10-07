@@ -5,7 +5,7 @@
   "locations": [
     {
       "address": "5001 Junipero Serra Blvd, Colma, CA 94014",
-      "lbt-origin-policy": "*.target.com"
+      "geo-origin-policy": "*.target.com"
     }
   ]
 }
